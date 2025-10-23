@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fotografer | Contact</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="custom-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">📸 PhotoArt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index1.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index2.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index3.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center display-4 fw-bold mb-5">Contact Me</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-5">
+                            <h4 class="mb-4">Get In Touch</h4>
+                            <form id="contactForm" onsubmit="handleSubmit(event)">
+                                <div class="mb-3">
+                                    <label class="form-label">Nama Lengkap *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                    <div class="invalid-feedback">Nama harus diisi!</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">Email tidak valid!</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">No. Telepon *</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                    <div class="invalid-feedback">Nomor telepon harus diisi!</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Jenis Layanan</label>
+                                    <select class="form-select" id="service">
+                                        <option value="wedding">Wedding</option>
+                                        <option value="portrait">Portrait</option>
+                                        <option value="event">Event</option>
+                                        <option value="other">Lainnya</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Pesan *</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    <div class="invalid-feedback">Pesan harus diisi!</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Kirim Pesan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-5">
+                            <h4 class="mb-4">Contact Information</h4>
+                            <div class="mb-4">
+                                <h6 class="fw-bold">📍 Alamat</h6>
+                                <p>Jl. sultan agung barat, Gresik, Jawa Timur </p>
+                            </div>
+                            <div class="mb-4">
+                                <h6 class="fw-bold">📧 Email</h6>
+                                <p>falahalkhalimi@gmail.com</p>
+                            </div>
+                            <div class="mb-4">
+                                <h6 class="fw-bold">📱 Telepon</h6>
+                                <p>+62 813-3696-9028</p>
+                            </div>
+                            <div class="mb-4">
+                                <h6 class="fw-bold">🕐 Jam Operasional</h6>
+                                <p>Senin - Sabtu: 09.00 - 18.00 WIB<br>Minggu: By Appointment</p>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-3">Follow Me</h6>
+                                <a href="#" class="btn btn-outline-primary me-2">Instagram</a>
+                                <a href="#" class="btn btn-outline-primary me-2">Facebook</a>
+                                <a href="#" class="btn btn-outline-primary">WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>PhotoArt</h5>
+                    <p>Professional photography services untuk menangkap momen berharga Anda.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <p>Email: falahalkhalimi@gmail.com<br>Phone: +62 813-3696-9028</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p>&copy; 2025 PhotoArt. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

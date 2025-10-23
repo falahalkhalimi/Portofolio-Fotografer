@@ -1,0 +1,223 @@
+
+/* CSS Native untuk Header */
+.custom-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.custom-header .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.custom-header .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.custom-header .nav-link:hover {
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.custom-header .nav-link.active {
+    color: white !important;
+    border-bottom: 2px solid white;
+}
+
+/* CSS Native untuk Footer */
+.custom-footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 80px;
+}
+
+.custom-footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.custom-footer a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.custom-footer a:hover {
+    color: #667eea;
+}
+
+.custom-footer hr {
+    opacity: 0.3;
+}
+
+/* CSS Native untuk Card Portfolio */
+.portfolio-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.portfolio-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1200') center/cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Loading Animation */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #667eea(255,255,255,0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s;
+}
+
+.loading-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Gallery Items Animation */
+.gallery-item {
+    transition: all 0.3s ease;
+}
+
+/* Filter Buttons */
+.filter-btn {
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+
+.filter-btn.active {
+    background-color: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.filter-btn:hover {
+    background-color: #667eea;
+    color: white;
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
+/* Form Styling */
+.form-control:focus,
+.form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Card Shadow Enhancement */
+.card.shadow {
+    transition: all 0.3s ease;
+}
+
+.card.shadow:hover {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 400px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    .custom-header .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-card img {
+        height: 200px;
+    }
+}
+
+/* Smooth Transitions */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button Hover Effects */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Navbar Toggler Custom */
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

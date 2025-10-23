@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fotografer | Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="custom-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index1.html">📸 PhotoArt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index1.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index2.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index3.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center display-4 fw-bold mb-5">My Portfolio</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="text-center mb-5">
+                <button class="btn btn-outline-primary mx-2 filter-btn active" onclick="filterGallery('All')">All</button>
+                <button class="btn btn-outline-primary mx-2 filter-btn" onclick="filterGallery('Organisasi')">Organisasi</button>
+                <button class="btn btn-outline-primary mx-2 filter-btn" onclick="filterGallery('Landscape')">Landscape</button>
+                <button class="btn btn-outline-primary mx-2 filter-btn" onclick="filterGallery('Event')">Event</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row g-4" id="galleryGrid">
+                <div class="col-md-4 gallery-item" data-category="Organisasi">
+                    <div class="portfolio-card card">
+                        <img src="./foto organisasi/IMG_0312.JPG" alt="Organisasi 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Organisasi</h5>
+                            <p class="card-text text-muted">Formal Photography</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="Landscape">
+                    <div class="portfolio-card card">
+                        <img src="outdoor/IMG_2527.JPG" alt="Landscape 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Landscape</h5>
+                            <p class="card-text text-muted">Landscape Photography</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="Event">
+                    <div class="portfolio-card card">
+                        <img src="./foto event/IMG_9467.JPG" alt="Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Event</h5>
+                            <p class="card-text text-muted">Event Photography</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="Organisasi">
+                    <div class="portfolio-card card">
+                        <img src="foto organisasi/IMG_9678.JPG" alt="Organisasi 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Organisasi</h5>
+                            <p class="card-text text-muted">FormalPhotography</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="Landscape">
+                    <div class="portfolio-card card">
+                        <img src="outdoor/IMG_2616.JPG" alt="Landscape 2">
+                        <div class="card-body">
+                            <h5 class="card-title"> Landscape</h5>
+                            <p class="card-text text-muted">Landscape Photography</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="Event">
+                    <div class="portfolio-card card">
+                        <img src="foto event/IMG_9478.JPG" alt="Event 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Event</h5>
+                            <p class="card-text text-muted">Event Photography</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>PhotoArt</h5>
+                    <p>Professional photography services untuk menangkap momen berharga Anda.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="index2.html">Portfolio</a></li>
+                        <li><a href="index3.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <p>Email: falahalkhalimi@gmail.com<br>Phone: +62 813-3966-9028</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p>&copy; 2025 PhotoArt. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
